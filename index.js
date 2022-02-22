@@ -1,6 +1,7 @@
-function employee(name, id, email, username) {
-    this.name = name;
-    this.id = id;
-    this.email = email;
-    this.username = username;
-}
+const inquirer = require("inquirer");
+const fs = require('fs');
+
+const Employee = require("./lib/employee");
+const Engineer = require("./lib/engineer");
+const Intern = require("./lib/intern");
+const Manager = require("./lib/manager");
