@@ -21,6 +21,7 @@ describe("testing engineer", () => {
     expect(engineer.getGithub()).toBeDefined()
     expect(typeof engineer.getGithub() === 'number').toBeFalsy()
     expect(typeof engineer.getGithub() === 'string').toBeTruthy()
+    expect(typeof engineer.getRole() === 'string').toBeTruthy()
   });
 
 

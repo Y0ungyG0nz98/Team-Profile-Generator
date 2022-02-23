@@ -1,4 +1,75 @@
-.header {
-    background-color: tomato;
-    text-align: center;
+html,body {
+    margin: 0;
 }
+
+header {
+    background-color: #e84756;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.employees_list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:2rem;
+    
+}
+
+
+.employee__card {
+    display: grid;
+    width: 250px;
+    grid-template-rows: 100px 160px ;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 3px 5px 3px 0 rgba(6, 27, 122, 0.062),
+    6px 9px 5px 0 rgba(6, 27, 122, 0.062);
+}
+
+
+.employee__title {
+    background: #0077f7;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.employee__title h2 {
+    padding: 0;
+    margin: 0;
+}
+
+
+.employee__role {
+    display: flex;
+    gap:1rem;
+}
+.employee__role_img {
+    --width: 55px;
+    width: var(--width);
+    height: var(--width);
+    object-fit: contain;
+    /* border: 1px solid; */
+    display: inline;
+}
+
+.employee__role_img {
+    display: inline-block;
+}
+
+.employee__attributes{
+    margin: 0;
+    padding: 1.6rem;
+    list-style: none;
+    gap: .8rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(6, 27, 122, 0.082) ;
+}
+
+
